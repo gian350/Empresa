@@ -1,0 +1,356 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+
+body {
+	font-size: 87.5%;
+	font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #02010a;
+	text-align: left;
+	color: #000305;	
+}
+
+/* Encabezados */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}		/* 14px */
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+
+/* Hipervínculos */
+a {outline: 0;}
+
+a:link, a:visited {
+	padding: 0 1px;
+	text-decoration: underline;
+	color: rgb(51, 153, 254);
+}
+
+/* Párrafos */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+
+
+/* Listas */
+ul {
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dt font-weight: bold;
+dd {margin-left: 1.5em;}
+
+/* Texto entre comillas */
+blockquote {font-style: italic;}
+
+
+/***** Estructura General *****/
+.body {
+	clear: both; 
+	margin: 0 auto;
+	width: 80%; 
+	background-color: #FFECD4 !important;
+}
+
+/*
+	Encabezado
+*****************/
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+	width: 80%;
+	background-color: #D3E9FF;
+	border-radius: 15px;
+}
+
+/* Banner */
+#banner h1 {font-size: 3.571em; line-height: .6;}
+#banner h1 a:link, #banner h1 a:visited {
+	display: block;
+	font-weight: bold;
+	margin: 0 0 .6em .2em;
+	text-decoration: none;
+	width: 465px;
+}
+
+#banner h1 a:hover, #banner h1 a:active {
+	text-shadow: none;
+}
+
+#banner h1 strong {
+	font-size: 0.36em; font-weight: normal;
+}
+
+/* Nav Principal*/
+
+#banner nav {
+	background-color: hsl(0, 0%, 21%);/*matiz , saturacion y intensidad*/
+	font-size: 1.143em;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 2em auto;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+
+/* menu */
+
+#menu{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	width: 100%;
+	height: 40px;
+}
+
+nav{
+	width: 100%;
+}
+
+#menu > li{
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+#menu >li > a:link, #menu >li > a:visited {
+	display: block;
+	height: 100%;
+	padding: 5px 1.5em;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#menu >li > a:hover, #menu >li > a:active{
+	background: hsla(200, 60%, 50%, 0.65);
+	text-shadow: none !important;
+}
+
+#banner nav .active a:link, #banner nav .active a:visited {
+	text-shadow: none !important;
+	background: #3399CC;
+	color: #FFF;
+}
+
+
+/* submenu */
+.submenu{
+	position: absolute;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	width: 100%;
+	background: #333333;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li{
+	float: left;
+	width: 100%;
+}
+
+.submenu li a{
+	display: block;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 5px 1.5em;
+	text-decoration: none;
+	color: #FFF;
+}
+
+#menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+.submenu li a:hover, .submenu li a:active{
+	background: hsla(200, 60%, 50%, 0.65);
+	text-shadow: none !important;
+}
+
+/*-----------FinSubMenu------------------*/
+
+
+/*
+	Contenido Relacionado con el contenido principal
+*****************/
+#featured {
+	background: url('../img/siembra_papa.jpg') no-repeat ;
+	background-size: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+	width: 80%;
+	height: 270px;
+}
+
+#featured h2 {font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+
+#featured h3 a:link, #featured h3 a:visited {text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {}
+
+/*
+	Cuerpo de la página <body>
+*****************/
+#Seccion-Principal {
+	overflow: hidden;
+	padding: 20px 20px;
+	width: 80%;
+}
+
+#cajatabla{
+	width: 75%;
+	margin: auto;
+}
+
+table{
+	width: 100%;
+	margin: auto;
+}
+
+
+
+/*	Pie de página
+*****************/
+#contentinfo {
+	width: 80%;
+    text-align: right;
+    background: url('../img/Fondo_madera.jpg') no-repeat ;
+	background-size: 100%;
+	border-radius: 0 0 20px 20px;
+}
+
+/* Contenedor Footer*/
+#contenedor-Footer{
+	width: 100%;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	display: flex;
+	flex-direction: row;
+	font-size: 0.7em;
+	color: white;
+}
+
+/* Columnas del footer */
+.columna{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+.columna h1{
+	font-size: 1.4em;
+	text-align: center;
+	color: black;
+}
+
+/* Logos de las redes */
+.redes{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items:flex-start;
+	margin-bottom: 1em;
+}
+
+.redes label{
+	width: 90%;
+	font-size: 11px;
+	text-align: left;
+}
+
+.redes img{
+	width: 2em;
+	height: 30px;
+	margin-right: 1em;
+	border-radius: 22px;
+}
+
+
+
+p{
+	text-align: justify;
+}
+/* termina footer*/
+
+/***** Secciones*****/
+
+.hentry {
+	padding: 1.5em 0;
+}
+
+li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
+#content > .hentry {padding: 1em 0;}
+
+.entry-title {font-size: 1.429em; margin-bottom: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none;}
+
+.hentry .post-info * {font-style: normal;}
+
+/* Contenido */
+.hentry footer {
+	width: 100%;
+	height: 80%;
+}
+
+.hentry footer figure {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+
+}
+
+.hentry footer figure img {
+	margin: auto;
+	width: 80%;
+	height: 100%;
+
+}
+
+
+/* Blog Index */
+#posts-list {list-style: none; margin: 0;}
+#posts-list .hentry {padding-left: 200px; position: relative;}
+
+/* Blog cambio de Fondo hover */
+
+#posts-list footer {
+	left: 10px;
+	position: absolute;
+	top: 1.5em;
+	width: 190px;
+}
+
+
+
+
+/*
+	a:link - un enlace normal no visitado
+	a:visited - un enlace que el usuario ha visitado
+	a:hover - un enlace cuando el usuario pasa el mouse sobre él
+	a:active - un enlace en el momento en que se hace clic
+ */
